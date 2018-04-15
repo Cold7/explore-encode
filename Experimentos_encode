@@ -1,0 +1,40 @@
+experimentos a priori a usar
+
+Cromatina abierta
+Metilacion del ADN
+Marcas epigenéticas
+TFs unidos a la cromatina
+cuantificacion expresion genica
+loops cromatina
+
+
+los experimentos disponibles son:
+
+'ChIP-seq', 'DNase-seq', 'shRNA RNA-seq', 'polyA RNA-seq', 'eCLIP', 'RNA microarray', 'DNAme array', 'total RNA-seq', 'RRBS', 'small RNA-seq', 'WGBS', 'RAMPAGE', 'genotyping array', 'microRNA-seq', 'Repli-seq', 'ATAC-seq', 'CAGE', 'CRISPRi RNA-seq', 'MRE-seq', 'siRNA RNA-seq', 'MeDIP-seq', 'CRISPR RNA-seq', 'Repli-chip', 'RIP-seq', 'single cell RNA-seq', 'genetic modification DNase-seq', 'ChIA-PET', 'microRNA counts', 'FAIRE-seq', 'Hi-C', 'RIP-chip', 'polyA depleted RNA-seq', 'RNA-PET', 'whole genome sequencing assay', 'genotyping HTS', 'MS-MS', '5C', 'PAS-seq', 'TAB-seq', 'iCLIP', 'DNA-PET', 'MNase-seq', 'Switchgear'
+
+
+Grupos
+Cromatina abierta: DNase-seq, ATAC-seq, FAIRE-seq
+	Faire : https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3784247/
+	ATAC: https://www.illumina.com/science/sequencing-method-explorer/kits-and-arrays/atac-seq.html
+	DNase: https://www.illumina.com/science/sequencing-method-explorer/kits-and-arrays/dnase-seq-dnasel-seq.html
+	MNase-seq descartado xq dna secuenciado es el de cromatina
+
+Metilacion del ADN: DNAme array, RRBS, MRE-seq, MeDIP-seq, TAB-seq, WGBS
+	DNAme array
+	mre: https://www.illumina.com/science/sequencing-method-explorer/kits-and-arrays/methyl-seq-mre-seq.html
+	rrbs no xq es x segmento (areas densas de meth)
+	medip: usa inmunoprecipitacion asi q no es base específico https://www.illumina.com/science/sequencing-method-explorer/kits-and-arrays/medip-seq-dip-seq.html
+	tab-seq https://www.illumina.com/science/sequencing-method-explorer/kits-and-arrays/tab-seq.html
+	wgbs https://en.wikipedia.org/wiki/Whole_genome_bisulfite_sequencing
+
+marcas epigenéticas: chip-seq
+
+ocupancia x tf: chip-seq
+	
+cuantificacion expresion genica
+	polyA RNA-seq, total RNA-seq
+
+loops cromatina
+	ChIA-PET, Hi-C, 5C
+
