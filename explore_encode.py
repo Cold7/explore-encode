@@ -39,7 +39,7 @@ def download_data(cell):
 				data = collections.defaultdict(dict)
 				while True:	
 					try:
-						if len(response_json_dict["@graph"][i]["replicates"]) >= n_replicates:
+						if len(response_json_dict["@graph"][i]["replicates"][0]["biological_replicate_number"]) >= n_replicates:
 							ID = response_json_dict["@graph"][i]["@id"]
 							URL2 = "https://www.encodeproject.org"+ID
 							# GET the object
@@ -107,7 +107,7 @@ def download_data(cell):
 									elif assay in loop:
 										current_exp = "loops"
 										
-									if status == "released" and current_exp!= False and response_json_dict2["assembly"] != [] and (response_json_dict2["internal_status"] == "release ready" or response_json_dict2["internal_status"] == "pipeline completed" ):
+									if status == "released" and current_exp!= False and response_json_dict2["assembly"] != [] and (response_json_dict2["internal_status"] == "release ready"): #or response_Sjson_dict2["internal_status"] == "pipeline completed" ):
 										for ass in current_assembly:
 
 											current_adding = "none"
@@ -119,7 +119,7 @@ def download_data(cell):
 											characteristics_dict[cell.replace(" ","_")][current_exp][ass][current_phase][current_adding] += 1
 									
 								except:
-									poutput.write("error trying to get response from "+URL2+" retrying in 10 seconds")
+									output.write("error trying to get response from "+URL2+" retrying in 10 seconds")
 									time.spleep(10)
 					except:
 						pass
